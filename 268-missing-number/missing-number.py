@@ -5,7 +5,9 @@ class Solution:
         for i in range(len(nums)):
             res+=(i-nums[i])
         return res'''
-        n=len(nums)
+        '''n=len(nums)
         for i in range(0,n+1):
             if i not in nums:
-                return i
+                return i'''
+        n=len(nums)
+        return (n*(n+1))//2 - sum(nums)
